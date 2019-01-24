@@ -1,5 +1,14 @@
+
+
 <resources>
     <string name="app_name">AndroidLabs</string>
     <string name="Hello_message">Hello World!</string>
-    <string name="ButtonText">I\'m a button</string>
+    <string name="ButtonText">Button</string>
+    <string name="MyWidgets">Here are my widgets:</string>
+    <string name="CheckThis">Check this out!</string>
+    <string name="MySwitch">Switch on / off</string>
+    <string name="MyType">Type your answer in here</string>
+
+
+
 </resources>
