@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <resources>
     <string name="app_name">AndroidLabs</string>
     <string name="Hello_message">Hello World!</string>
@@ -9,5 +11,19 @@
     <string name="MyType">Type your answer in here</string>
 
 
+    <!--** activityFirst **-->
+
+    <string name="emailTitle">Enter your email address:</string>
+    <string name="textEmailAddress">Type email here</string>
+    <string name="textPassword">Type your password:</string>
+    <string name="Login">Login:</string>
+
+    <!--** profileActivity **-->
+    <string name="profileText">Your profile:</string>
+    <string name="yourName">Your name:</string>
+    <string name="EnterName">Enter your name</string>
+    <string name="yourEmail">Enter your email</string>
+    <string name="youPicture">Your picture:</string>
+    <string name="clickPicture">Click the  button above to take a picture</string>
 
 </resources>
