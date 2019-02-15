@@ -42,10 +42,23 @@ public class ProfileActivity extends AppCompatActivity {
 
         });
 
+        goToChatBtn = (Button)findViewById(R.id.GoToChatBtn);
+        goToChatBtn.setOnClickListener(c -> {
+            Intent goToChatPage = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+
+            startActivityForResult(goToChatPage, 345);
+
+        });
+
+
+
+
         Log.e(ACTIVITY_NAME, "In function: onCreate()");
-
-
     }
+
+
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

@@ -17,18 +17,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
 
         Button nextButton = (Button)findViewById(R.id.loginButton);
+
         emailField = (EditText)findViewById(R.id.typeEmail);
         share = getSharedPreferences("FileName", Context.MODE_PRIVATE);
         String saveEmail = share.getString("ReserveName", "Default value");
+
+
         emailField.setHint(saveEmail);
         nextButton.setOnClickListener( b -> {
 
 
             Intent nextPage = new Intent(MainActivity.this, ProfileActivity.class);
-
-
-            nextPage.putExtra("emailType", emailField.getText().toString());
-
+            nextPage.putExtra("emailTyped", emailField.getText().toString());
             startActivityForResult(nextPage, 345);
         });
     }

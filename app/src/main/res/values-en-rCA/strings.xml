@@ -26,4 +26,12 @@
     <string name="youPicture">Your picture:</string>
     <string name="clickPicture">Click the  button above to take a picture</string>
 
+
+    <!--** lab4 **-->
+    <string name="sendMsg">Send</string>
+    <string name="recMsg">Recieve</string>
+    <string name="chatBar">Type Here</string>
+    <string name="enterChat">Go To Chat</string>
+
+
 </resources>
