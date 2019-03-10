@@ -54,17 +54,25 @@ public class TodoDatabaseHelper extends SQLiteOpenHelper {
     }
 
     // this is a request to see the table data
-    public Cursor viewData() {
-
-            SQLiteDatabase db = this.getReadableDatabase();
-            String query = "Select * from " + DB_TABLE;
-            Cursor cursor = db.rawQuery(query, null);
-            Log.e("Database Version Number", Integer.toString(db.getVersion()));
-            Log.e("Column Count", Integer.toString(cursor.getColumnCount()));
-            Log.e("Column Names", Arrays.toString(cursor.getColumnNames()));
-            Log.e("Row Count", Integer.toString(cursor.getCount()));
-            Log.e("Cursor Object", DatabaseUtils.dumpCursorToString(cursor));
-            return cursor;
-
-        }
+    public Cursor viewData(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "Select * from "+DB_TABLE;
+        Cursor cursor = db.rawQuery(query, null);
+        printCursor(cursor);
+        return cursor;
     }
+
+    public void printCursor(Cursor cursor){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Log.v("Database Version:", Integer.toString(db.getVersion()));
+        Log.v("Number of columns: ", Integer.toString(cursor.getColumnCount()));
+        for (int i = 0; i < cursor.getColumnCount(); i++){
+            Log.v("Column "+(i+1)+": ", cursor.getColumnName(i));
+        }
+        Log.v("Number of rows:", Integer.toString(cursor.getCount()));
+        Log.v("Cursor Object", DatabaseUtils.dumpCursorToString(cursor));
+
+
+
+    }
+}
