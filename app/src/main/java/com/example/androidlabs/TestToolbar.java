@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class TestToolbar extends AppCompatActivity {
-    String toastOverflow = "This is initial msg";
+    String msg= "This is initial msg";
 
 
     @Override
@@ -43,7 +43,7 @@ public class TestToolbar extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.item1:
-                Toast.makeText(this, toastOverflow, Toast.LENGTH_LONG).show();
+                Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
                 break;
             case R.id.item2:
                 alertExample();
@@ -76,7 +76,7 @@ public class TestToolbar extends AppCompatActivity {
                 .setPositiveButton("Positive", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
 
-                        toastOverflow = et.getText().toString();
+                        msg = et.getText().toString();
                     }
                 })
                 .setNegativeButton("Negative", new DialogInterface.OnClickListener() {

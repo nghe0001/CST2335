@@ -33,5 +33,8 @@
     <string name="chatBar">Type Here</string>
     <string name="enterChat">Go To Chat</string>
 
+    <!--** lab6 **-->
+    <string name="toolBar">Go To Tool Bar Page</string>
+
 
 </resources>

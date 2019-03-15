@@ -50,6 +50,12 @@ public class ProfileActivity extends AppCompatActivity {
 
         });
 
+        Button toolbarBtn = (Button) findViewById(R.id.toolBarButt);
+        Intent toolbarIntent = new Intent(ProfileActivity.this, TestToolbar.class);
+        toolbarBtn.setOnClickListener(d -> {
+            startActivity(toolbarIntent);
+        });
+
 
 
 
